@@ -13,6 +13,7 @@ body{
   width:100%;
   height: 100vh;
   display: flex;
+  transition: 300ms;
 }
 
 .container .image-box{
@@ -150,6 +151,10 @@ button{
   margin-bottom: 20px;
   outline: none;
   box-shadow: 7px 7px 14px -4px red;
+  transition: 200ms;
+}
+button:hover{
+  transform: scale(1.1);
 }
 @media (max-width: 768px) {
   .container .image-box{
@@ -173,5 +178,9 @@ button{
     width: 100%;
     height: 100%;
     z-index: 1;
+  }
+  .social-links-container .social-links span {
+    display: none;
+
   }
 }
